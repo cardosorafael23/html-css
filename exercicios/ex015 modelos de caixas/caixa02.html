@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Divs e caixas</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            header {
+                background-color: bisque;
+                padding: 20px;
+            }
+
+            header > h1 {
+                display: inline-block;
+                background-color: pink;
+            }
+
+            nav {
+                background-color: aquamarine;
+                padding: 20px;
+            }
+
+            nav > a {
+                margin-right: 20px;
+            }
+
+            section {
+                background-color: lightseagreen;
+                padding: 30px;
+                margin-right: 40%;
+            }
+
+            .primeiro {
+                background-color: lime;
+                padding-bottom: 30%;
+            }
+
+            .segundo {
+                background-color: magenta;
+                padding-bottom: 30%;
+            }
+
+            .segundo > aside {
+                background-color: midnightblue;
+                padding: 5px;
+                margin: 0 20%;
+            }
+
+            main > aside {
+                display: inline-block;
+                background-color: olive;
+                padding: 15px;
+                margin-left: 60%;
+            }
+
+            footer {
+                background-color: orange;
+                padding: 10px;
+                margin: 10px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>LOGO</h1>
+            <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <article class="primeiro">
+                    <h1>primeiro artigo</h1>
+                    <p>qualquer coisa escrita dentro da primeira article</p>
+                </article>
+
+                <article class="segundo">
+                    <h1>segunda article</h1>
+                    <p>essa é a segunda article dentro da minha section</p>
+
+                    <aside>
+                        <p>eu sou um aside dentro da article</p>
+                    </aside>
+                </article>
+            </section>
+
+            <aside>
+                <h1>sou um aside ao lado</h1>
+            </aside>
+        </main>
+
+        <footer>
+            <p>criado pelo rafaelzinho bom de briga</p>
+        </footer>
+    </body>
+</html>
